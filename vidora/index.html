@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vidora - Video Platform</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+
+    <div class="header-left">
+
+      <button class="icon-button" id="menuButton">
+        ☰
+      </button>
+
+      <div class="logo">
+        <span class="logo-icon">▶</span>
+        <span class="logo-text">Vidora</span>
+      </div>
+
+    </div>
+
+
+    <div class="search-container">
+
+      <input type="text" id="searchInput" placeholder="Search">
+
+      <button id="searchButton">
+        🔍
+      </button>
+
+    </div>
+
+
+    <div class="header-right">
+
+      <button class="icon-button">
+        🎤
+      </button>
+
+      <button class="icon-button">
+        ➕
+      </button>
+
+      <button class="icon-button">
+        🔔
+      </button>
+
+      <button class="profile-button">
+        D
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= SIDEBAR ================= -->
+
+  <aside class="sidebar" id="sidebar">
+
+    <nav>
+
+      <a class="nav-item active" href="#">
+        <span>🏠</span>
+        <span>Home</span>
+      </a>
+
+      <a class="nav-item" href="#">
+        <span>🎬</span>
+        <span>Shorts</span>
+      </a>
+
+      <a class="nav-item" href="#">
+        <span>📺</span>
+        <span>Subscriptions</span>
+      </a>
+
+      <hr>
+
+      <a class="nav-item" href="#">
+        <span>📚</span>
+        <span>Library</span>
+      </a>
+
+      <a class="nav-item" href="#">
+        <span>🕘</span>
+        <span>History</span>
+      </a>
+
+      <a class="nav-item" href="#">
+        <span>👍</span>
+        <span>Liked videos</span>
+      </a>
+
+      <hr>
+
+      <h3>Explore</h3>
+
+      <a class="nav-item" href="#">
+        <span>🔥</span>
+        <span>Trending</span>
+      </a>
+
+      <a class="nav-item" href="#">
+        <span>🎵</span>
+        <span>Music</span>
+      </a>
+
+      <a class="nav-item" href="#">
+        <span>🎮</span>
+        <span>Gaming</span>
+      </a>
+
+      <a class="nav-item" href="#">
+        <span>📰</span>
+        <span>News</span>
+      </a>
+
+      <a class="nav-item" href="#">
+        <span>🏆</span>
+        <span>Sports</span>
+      </a>
+
+      <hr>
+
+      <a class="nav-item" href="#">
+        <span>⚙️</span>
+        <span>Settings</span>
+      </a>
+
+      <a class="nav-item" href="#">
+        <span>🚩</span>
+        <span>Report history</span>
+      </a>
+
+      <a class="nav-item" href="#">
+        <span>❓</span>
+        <span>Help</span>
+      </a>
+
+    </nav>
+
+  </aside>
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main class="main-content">
+
+    <!-- CATEGORY BAR -->
+
+    <div class="categories" id="categories">
+
+      <button class="category active" data-category="All">
+        All
+      </button>
+
+      <button class="category" data-category="Technology">
+        Technology
+      </button>
+
+      <button class="category" data-category="Gaming">
+        Gaming
+      </button>
+
+      <button class="category" data-category="Music">
+        Music
+      </button>
+
+      <button class="category" data-category="Education">
+        Education
+      </button>
+
+      <button class="category" data-category="Programming">
+        Programming
+      </button>
+
+      <button class="category" data-category="News">
+        News
+      </button>
+
+      <button class="category" data-category="Sports">
+        Sports
+      </button>
+
+    </div>
+
+
+    <!-- ================= VIDEO SECTION ================= -->
+
+    <section class="video-section">
+
+      <div class="section-heading">
+
+        <h1>Recommended</h1>
+
+      </div>
+
+      <div class="video-grid" id="videoGrid">
+      </div>
+
+    </section>
+
+
+    <!-- ================= SHORTS ================= -->
+
+    <section class="shorts-section">
+
+      <div class="shorts-heading">
+
+        <h2>
+          <span>▶</span>
+          Shorts
+        </h2>
+
+        <button>
+          View all
+        </button>
+
+      </div>
+
+
+      <div class="shorts-grid" id="shortsGrid">
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= MOBILE OVERLAY ================= -->
+
+  <div class="sidebar-overlay" id="sidebarOverlay">
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
