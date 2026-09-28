@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viewly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__left">
+      <button id="menuBtn" class="icon-btn" aria-label="Toggle menu">☰</button>
+      <a href="index.html" class="logo">Viewly</a>
+    </div>
+    <form id="searchForm" class="search" role="search">
+      <input id="searchInput" type="search" placeholder="Search" aria-label="Search" />
+      <button type="submit" class="search__btn" aria-label="Search">🔍</button>
+    </form>
+    <div class="header__right">
+      <div class="avatar avatar--me" aria-hidden="true">ME</div>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <a href="index.html" class="sidebar__link">Home</a>
+    <a href="#" class="sidebar__link">Subscriptions</a>
+    <hr />
+    <a href="#" class="sidebar__link">Library</a>
+    <a href="#" class="sidebar__link">History</a>
+    <a href="#" class="sidebar__link">Watch later</a>
+    <a href="#" class="sidebar__link">Liked videos</a>
+  </aside>
+
+  <main class="content">
+    <div id="status" class="status" role="status" hidden></div>
+    <div class="watch">
+      <div class="watch__main">
+        <div class="player" id="player"></div>
+
+        <h1 id="videoTitle" class="watch__title"></h1>
+
+        <div class="watch__channel-row">
+          <div class="channel">
+            <div class="avatar" id="channelAvatar"></div>
+            <strong id="channelName"></strong>
+            <button id="subBtn" class="subscribe">Subscribe</button>
+          </div>
+          <button id="likeBtn" class="pill-btn">👍</button>
+        </div>
+
+        <div class="description">
+          <p id="descMeta" class="description__meta"></p>
+          <p id="descText" class="description__text collapsed"></p>
+          <button id="descToggle" class="link-btn">Show more</button>
+        </div>
+
+        <section class="comments">
+          <h2 id="commentCount">Comments</h2>
+          <form id="commentForm" class="comment-form">
+            <div class="avatar avatar--me" aria-hidden="true">ME</div>
+            <input id="commentInput" type="text" placeholder="Add a comment" aria-label="Add a comment" />
+            <button type="submit" class="pill-btn">Comment</button>
+          </form>
+          <div id="commentList"></div>
+        </section>
+      </div>
+
+      <aside class="watch__side" id="upNext" aria-label="Up next"></aside>
+    </div>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="utils.js"></script>
+  <script src="api.js"></script>
+  <script src="common.js"></script>
+  <script src="watch.js"></script>
+</body>
+</html>
